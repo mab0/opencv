@@ -75,6 +75,9 @@ if(NOT MSVC)
   add_extra_compiler_option(-fsigned-char)
 endif()
 
+add_extra_compiler_option(-DJPEG_LIB_VERSION=80)
+add_extra_compiler_option(-DBITS_IN_JSAMPLE=8)
+
 if(CV_ICC AND NOT ENABLE_FAST_MATH)
   if(MSVC)
     add_extra_compiler_option("/fp:precise")

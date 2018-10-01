@@ -126,6 +126,9 @@ class Builder:
             "cmake",
             "-GXcode",
             "-DAPPLE_FRAMEWORK=ON",
+            "-DBUILD_JPEG=OFF",
+            "-DJPEG_LIBRARY=/Users/knightec/Qt/5.11.1/ios/plugins/imageformats/libqjpeg.a",
+            "-DJPEG_INCLUDE_DIR=/Users/knightec/Qt/5.11.1/Src/qtbase/src/3rdparty/libjpeg/src",
             "-DCMAKE_INSTALL_PREFIX=install",
             "-DCMAKE_BUILD_TYPE=Release",
         ] + ([
